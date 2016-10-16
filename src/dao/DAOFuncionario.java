@@ -22,7 +22,7 @@ public class DAOFuncionario {
                 funcionario = new Funcionario();
                 funcionario.setId(rs.getInt("ID"));
                 funcionario.setNome(rs.getString("NOME"));
-                funcionario.setCpf(rs.getString("DOCUMENTO"));
+                funcionario.setCpf(rs.getString("CPF"));
                 funcionario.setStatus("A");
                 funcionario.setCidade(daoFK.consultar(rs.getInt("CIDADE_ID")));
                 lista.add(funcionario);

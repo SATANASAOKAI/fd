@@ -21,6 +21,7 @@ public class DAOProduto {
             while(rs.next()){
                 produto = new Produto();
                 produto.setId(rs.getInt("ID"));
+                produto.setNome(rs.getString("NOME"));
                 produto.setPrecoVenda(rs.getDouble("PRECO_V"));
                 produto.setEstoque(rs.getInt("ESTOQUE"));
                 produto.setStatus(rs.getString("STATUS"));
